@@ -2,13 +2,22 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 
 export class ProductDetailPage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      activeTabId: 0,
+    };
+  }
   selectTab(event, tabId) {
-
+    this.setState({
+      activeTabId: tabId,
+    });
+    alert(tabId);
   }
 
   render() {
     const { productId } = this.props.params;
-    const activeTabId = 0;
+    const {activeTabId} = this.state;
     return (
       <div>
         <div className="jumbotron">
@@ -24,6 +33,16 @@ export class ProductDetailPage extends Component {
             <li role="presentation" className={classNames({ active: 1 === activeTabId })}>
               <a href="#" onClick={(event) => this.selectTab(event, 1)}>
                 Parameters
+              </a>
+            </li>
+            <li role="presentation" className={classNames({ active: 2 === activeTabId })}>
+              <a href="#" onClick={(event) => this.selectTab(event, 2)}>
+                fasdhfk
+              </a>
+            </li>
+            <li role="presentation" className={classNames({ active: 3 === activeTabId })}>
+              <a href="#" onClick={(event) => this.selectTab(event, 3)}>
+                aksjdhfk
               </a>
             </li>
           </ul>
