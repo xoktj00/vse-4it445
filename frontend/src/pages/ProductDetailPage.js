@@ -12,11 +12,23 @@ export class ProductDetailPage extends Component {
     this.setState({
       activeTabId: tabId,
     });
-    alert(tabId);
+  }
+  getTabContent(tabId){
+    const { productId } = this.props.params;
+    return(
+      <div>
+        <h3>id: {productId}</h3>
+        <p>price: <span className="price">750 000 Kč</span></p>
+        <p>Luxury car produced in the Czech Republic.</p>
+        </div>
+    );
   }
 
   render() {
     const { productId } = this.props.params;
+    const a = this.props;
+    alert(a.toString());
+    const { products } = this.props;
     const {activeTabId} = this.state;
     return (
       <div>
@@ -37,15 +49,16 @@ export class ProductDetailPage extends Component {
             </li>
             <li role="presentation" className={classNames({ active: 2 === activeTabId })}>
               <a href="#" onClick={(event) => this.selectTab(event, 2)}>
-                fasdhfk
+                Properties
               </a>
             </li>
             <li role="presentation" className={classNames({ active: 3 === activeTabId })}>
               <a href="#" onClick={(event) => this.selectTab(event, 3)}>
-                aksjdhfk
+                Another Properties
               </a>
             </li>
           </ul>
+          <script>getTabContent();</script>
           <h3>id: {productId}</h3>
           <p>price: <span className="price">750 000 Kč</span></p>
           <p>Luxury car produced in the Czech Republic.</p>
