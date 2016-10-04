@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import { ProductList } from '../components/ProductList/ProductList.js';
 
 export class ProductsPage extends Component {
+  componentDidMount(){
+    console.log("did mount");
+
+    axios('http://dev.backend.xoktj00.vse.handson.pro/api/products').then((response) => {
+      console.log('response',response.data);
+    })
+  }
   render() {
     const products = [
       {
