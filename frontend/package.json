@@ -9,6 +9,8 @@
     "axios": "^0.14.0",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "loopback-connector-mysql": "^2.3.0",
+    "loopback-datasource-juggler": "^2.51.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
