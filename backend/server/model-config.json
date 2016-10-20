@@ -37,7 +37,11 @@
     "public": true
   },
   "EshopCategory": {
+<<<<<<< HEAD
     "dataSource": "mysqlds",
+=======
+    "dataSource": "mysqlds",
+>>>>>>> 003095849158848ca0cc9071a5e0db11902dd56f
     "public": true
   }
 }

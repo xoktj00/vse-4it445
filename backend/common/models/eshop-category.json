@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "EshopCategory",
   "plural": "categories",
@@ -23,3 +24,27 @@
   "acls": [],
   "methods": {}
 }
+=======
+{
+  "name": "EshopCategory",
+  "plural": "categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+>>>>>>> 003095849158848ca0cc9071a5e0db11902dd56f

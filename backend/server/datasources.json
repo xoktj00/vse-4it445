@@ -5,7 +5,16 @@
   },
   "mysqlds": {
     "name": "mysqlds",
+<<<<<<< HEAD
     "connector": "memory",
     "note": "This is overwritten in ./datasources.local.js"
+=======
+    "connector": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "database": "user_xoktj00",
+    "username": "xoktj00",
+    "password": "xf2dvtwj8g9w9mtx"
+>>>>>>> 003095849158848ca0cc9071a5e0db11902dd56f
   }
 }

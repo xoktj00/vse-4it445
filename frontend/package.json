@@ -9,7 +9,12 @@
     "axios": "^0.14.0",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+<<<<<<< HEAD
     "lodash": "^4.16.4",
+=======
+    "loopback-connector-mysql": "^2.3.0",
+    "loopback-datasource-juggler": "^2.51.0",
+>>>>>>> 003095849158848ca0cc9071a5e0db11902dd56f
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",

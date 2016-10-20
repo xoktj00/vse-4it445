@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 module.exports = function(EshopProduct) {
@@ -24,3 +25,10 @@ module.exports = function(EshopProduct) {
       }
   );
 };
+=======
+'use strict';
+
+module.exports = function(Eshopproduct) {
+
+};
+>>>>>>> 003095849158848ca0cc9071a5e0db11902dd56f
