@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { dummyAction } from '../../actions';
+import { addToCart } from '../../actions';
 
 export class AddProductToCartButton extends Component {
   render() {
     const {
       product,
-      dummyAction,
+      addToCart,
     } = this.props;
     return (
       <button
-        onClick={() => dummyAction({ product })}
+        onClick={() => addToCart(product)}
         type="button"
         className="btn btn-success"
       >
@@ -24,7 +24,7 @@ export class AddProductToCartButton extends Component {
   }
 }
 
-export const AddProductToCartButtonContainer = connect(
+export const AddProductToCartButtonContainer = connect( //connect je higher order Component udela z buttonu container
   () => ({}),
-  { dummyAction },
-)(AddProductToCartButton);
+  { addToCart },
+)(AddProductToCartButton); //tohle mz pak pouzivame
